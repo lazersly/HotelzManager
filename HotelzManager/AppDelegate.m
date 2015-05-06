@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "FromDateViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +23,11 @@
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   [self.window makeKeyAndVisible];
   
-  ViewController *rootVC = [[ViewController alloc] init];
+//  ViewController *rootVC = [[ViewController alloc] init];
+
+  FromDateViewController *rootVC = [[FromDateViewController alloc] init];
+  UINavigationController *rootNav = [[UINavigationController alloc] init];
+  
   self.window.rootViewController = rootVC;
   
   return YES;
