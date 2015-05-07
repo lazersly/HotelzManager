@@ -2,7 +2,7 @@
 //  Room.h
 //  HotelzManager
 //
-//  Created by Brandon Roberts on 5/4/15.
+//  Created by Brandon Roberts on 5/6/15.
 //  Copyright (c) 2015 BR World. All rights reserved.
 //
 
@@ -13,9 +13,10 @@
 
 @interface Room : NSManagedObject
 
-@property (nonatomic) int16_t rate;
-@property (nonatomic) int16_t number;
-@property (nonatomic) int16_t beds;
+@property (nonatomic, retain) NSNumber * beds;
+@property (nonatomic, retain) NSNumber * number;
+@property (nonatomic, retain) NSDecimalNumber * rate;
+@property (nonatomic, retain) NSNumber * rating;
 @property (nonatomic, retain) Hotel *hotel;
 @property (nonatomic, retain) NSSet *reservations;
 @end

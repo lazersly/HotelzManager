@@ -24,8 +24,8 @@
   self.datePicker.translatesAutoresizingMaskIntoConstraints = NO;
   [rootView addSubview:self.datePicker];
   
-  NSDate *now = [NSDate date];
-  NSDateComponents *newComponents = [NSDateComponents
+//  NSDate *now = [NSDate date];
+//  NSDateComponents *newComponents = [NSDateC
 
   NSDictionary *views = @{@"datePicker" : self.datePicker};
   
@@ -48,7 +48,6 @@
   NSArray *constraints = @[datePickerCenterX, datePickerCenterY];
   
   [rootView addConstraints:constraints];
-  
 }
 
 @end

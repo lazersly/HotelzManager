@@ -2,7 +2,7 @@
 //  Guest.h
 //  HotelzManager
 //
-//  Created by Brandon Roberts on 5/4/15.
+//  Created by Brandon Roberts on 5/6/15.
 //  Copyright (c) 2015 BR World. All rights reserved.
 //
 
@@ -13,8 +13,9 @@
 
 @interface Guest : NSManagedObject
 
-@property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * creditCard;
+@property (nonatomic, retain) NSString * firstName;
+@property (nonatomic, retain) NSString * lastName;
 @property (nonatomic, retain) NSSet *reservations;
 @end
 

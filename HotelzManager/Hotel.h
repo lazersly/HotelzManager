@@ -2,7 +2,7 @@
 //  Hotel.h
 //  HotelzManager
 //
-//  Created by Brandon Roberts on 5/4/15.
+//  Created by Brandon Roberts on 5/6/15.
 //  Copyright (c) 2015 BR World. All rights reserved.
 //
 
@@ -13,9 +13,9 @@
 
 @interface Hotel : NSManagedObject
 
-@property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * location;
-@property (nonatomic) int16_t stars;
+@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSNumber * stars;
 @property (nonatomic, retain) NSSet *rooms;
 @end
 
